@@ -4,13 +4,13 @@ import logging
 import re
 import string
 
-from registration import get_registration_data
-from password_mask import mask_password
-from regular_expressions import login_re
-from errors import ValidationError
+from source.registration import get_registration_data
+from source.password_mask import mask_password
+from source.regular_expressions import login_re
+from source.errors import ValidationError
 
 # 1. Создание папки для логов, если её нет
-os.makedirs("logs", exist_ok=True)
+os.makedirs("../logs", exist_ok=True)
 
 BLACKLIST = {"admin", "user", "root", "test"}
 special = re.escape(string.punctuation)
@@ -40,7 +40,7 @@ formatter = logging.Formatter(log_format, datefmt=date_format)
 console_handler = logging.StreamHandler(sys.stdout)
 console_handler.setFormatter(formatter)
 
-file_handler = logging.FileHandler("logs/file_txt.log", encoding="utf-8")
+file_handler = logging.FileHandler("../logs/file_txt.log", encoding="utf-8")
 file_handler.setFormatter(formatter)
 
 logger.addHandler(console_handler)

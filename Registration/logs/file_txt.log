@@ -12,3 +12,71 @@ errors.ValidationError: Пароль должен содержать миним�
 2026-09-25 20:12:15 | [INFO   ] | Логин: N/A | Маска: N/A | Приложение запущено
 2026-09-25 20:13:16 | [DEBUG  ] | Логин: pochta286@gmail.com | Маска: hashf234867efc62 | Начало проверки данных пользователя
 2026-09-25 20:13:16 | [INFO   ] | Логин: pochta286@gmail.com | Маска: hashf234867efc62 | Регистрация успешно завершена
+2026-10-01 00:33:48 | [INFO   ] | Логин: N/A | Маска: N/A | Приложение запущено
+2026-10-01 00:34:32 | [DEBUG  ] | Логин: NewEmail@gmail.com | Маска: hash07af56ae4138 | Начало проверки данных пользователя
+2026-10-01 00:34:32 | [INFO   ] | Логин: NewEmail@gmail.com | Маска: hash07af56ae4138 | Регистрация успешно завершена
+2026-10-01 00:43:36 | [DEBUG  ] | Логин: ab | Маска: hash72165b0b199c | Начало проверки данных пользователя
+2026-10-01 00:43:36 | [ERROR  ] | Логин: ab | Маска: hash72165b0b199c | Ошибка валидации данных
+2026-10-01 00:43:36 | [ERROR  ] | Логин: N/A | Маска: N/A | Трассировка стека исключения валидации:
+Traceback (most recent call last):
+  File "C:\Users\Alexandr\PycharmProjects\Registration\source\program.py", line 66, in validate_and_register
+    raise ValidationError(
+source.errors.ValidationError: Логин не соответствует формату (телефон +x-xxx-xxx-xxxx, email или строка: мин. 5 символов, латиница, цифры, '_').
+2026-10-01 00:43:36 | [DEBUG  ] | Логин: admin | Маска: hash72165b0b199c | Начало проверки данных пользователя
+2026-10-01 00:43:36 | [ERROR  ] | Логин: admin | Маска: hash72165b0b199c | Ошибка валидации данных
+2026-10-01 00:43:36 | [ERROR  ] | Логин: N/A | Маска: N/A | Трассировка стека исключения валидации:
+Traceback (most recent call last):
+  File "C:\Users\Alexandr\PycharmProjects\Registration\source\program.py", line 62, in validate_and_register
+    raise ValidationError("Логин находится в чёрном списке.")
+source.errors.ValidationError: Логин находится в чёрном списке.
+2026-10-01 00:43:36 | [DEBUG  ] | Логин: user_test | Маска: hashb7175b1d678d | Начало проверки данных пользователя
+2026-10-01 00:43:36 | [ERROR  ] | Логин: user_test | Маска: hashb7175b1d678d | Ошибка валидации данных
+2026-10-01 00:43:36 | [ERROR  ] | Логин: N/A | Маска: N/A | Трассировка стека исключения валидации:
+Traceback (most recent call last):
+  File "C:\Users\Alexandr\PycharmProjects\Registration\source\program.py", line 77, in validate_and_register
+    raise ValidationError("Пароль должен содержать минимум одну цифру.")
+source.errors.ValidationError: Пароль должен содержать минимум одну цифру.
+2026-10-01 00:43:36 | [DEBUG  ] | Логин: user_test | Маска: hash650e8abc1475 | Начало проверки данных пользователя
+2026-10-01 00:43:36 | [ERROR  ] | Логин: user_test | Маска: hash650e8abc1475 | Ошибка валидации данных
+2026-10-01 00:43:36 | [ERROR  ] | Логин: N/A | Маска: N/A | Трассировка стека исключения валидации:
+Traceback (most recent call last):
+  File "C:\Users\Alexandr\PycharmProjects\Registration\source\program.py", line 75, in validate_and_register
+    raise ValidationError("Пароль должен содержать минимум одну строчную букву кириллицы.")
+source.errors.ValidationError: Пароль должен содержать минимум одну строчную букву кириллицы.
+2026-10-01 00:43:36 | [DEBUG  ] | Логин: user_test | Маска: hash4664da7bfaf7 | Начало проверки данных пользователя
+2026-10-01 00:43:36 | [ERROR  ] | Логин: user_test | Маска: hash4664da7bfaf7 | Ошибка валидации данных
+2026-10-01 00:43:36 | [ERROR  ] | Логин: N/A | Маска: N/A | Трассировка стека исключения валидации:
+Traceback (most recent call last):
+  File "C:\Users\Alexandr\PycharmProjects\Registration\source\program.py", line 79, in validate_and_register
+    raise ValidationError("Пароль должен содержать минимум один спецсимвол.")
+source.errors.ValidationError: Пароль должен содержать минимум один спецсимвол.
+2026-10-01 00:43:36 | [DEBUG  ] | Логин: user_test | Маска: hash2b63173b636d | Начало проверки данных пользователя
+2026-10-01 00:43:36 | [ERROR  ] | Логин: user_test | Маска: hash2b63173b636d | Ошибка валидации данных
+2026-10-01 00:43:36 | [ERROR  ] | Логин: N/A | Маска: N/A | Трассировка стека исключения валидации:
+Traceback (most recent call last):
+  File "C:\Users\Alexandr\PycharmProjects\Registration\source\program.py", line 73, in validate_and_register
+    raise ValidationError("Пароль должен содержать минимум одну заглавную букву кириллицы.")
+source.errors.ValidationError: Пароль должен содержать минимум одну заглавную букву кириллицы.
+2026-10-01 00:43:36 | [DEBUG  ] | Логин: user_test | Маска: hash2e627c892dc5 | Начало проверки данных пользователя
+2026-10-01 00:43:36 | [ERROR  ] | Логин: user_test | Маска: hash2e627c892dc5 | Ошибка валидации данных
+2026-10-01 00:43:36 | [ERROR  ] | Логин: N/A | Маска: N/A | Трассировка стека исключения валидации:
+Traceback (most recent call last):
+  File "C:\Users\Alexandr\PycharmProjects\Registration\source\program.py", line 81, in validate_and_register
+    raise ValidationError(
+source.errors.ValidationError: Пароль не должен содержать латинские буквы (разрешены только кириллица, цифры и спецсимволы).
+2026-10-01 00:43:36 | [DEBUG  ] | Логин: user_test | Маска: hash76ec086d6c2c | Начало проверки данных пользователя
+2026-10-01 00:43:36 | [ERROR  ] | Логин: user_test | Маска: hash76ec086d6c2c | Ошибка валидации данных
+2026-10-01 00:43:36 | [ERROR  ] | Логин: N/A | Маска: N/A | Трассировка стека исключения валидации:
+Traceback (most recent call last):
+  File "C:\Users\Alexandr\PycharmProjects\Registration\source\program.py", line 71, in validate_and_register
+    raise ValidationError("Пароль должен содержать минимум 7 символов.")
+source.errors.ValidationError: Пароль должен содержать минимум 7 символов.
+2026-10-01 00:43:36 | [DEBUG  ] | Логин: user_test | Маска: hash72165b0b199c | Начало проверки данных пользователя
+2026-10-01 00:43:36 | [ERROR  ] | Логин: user_test | Маска: hash72165b0b199c | Ошибка валидации данных
+2026-10-01 00:43:36 | [ERROR  ] | Логин: N/A | Маска: N/A | Трассировка стека исключения валидации:
+Traceback (most recent call last):
+  File "C:\Users\Alexandr\PycharmProjects\Registration\source\program.py", line 86, in validate_and_register
+    raise ValidationError("Пароль и подтверждение пароля не идентичны.")
+source.errors.ValidationError: Пароль и подтверждение пароля не идентичны.
+2026-10-01 00:43:36 | [DEBUG  ] | Логин: valid_user_99 | Маска: hash72165b0b199c | Начало проверки данных пользователя
+2026-10-01 00:43:36 | [INFO   ] | Логин: valid_user_99 | Маска: hash72165b0b199c | Регистрация успешно завершена
